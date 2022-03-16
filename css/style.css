@@ -1,0 +1,384 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	background-color: #f8f9fa;
+    direction: rtl;
+}
+
+.container-fluid {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+a {
+	color: #6f8ba4;
+	text-decoration: none;
+	outline: 0 !important;
+	display: inline-block;
+	transition: all ease-in 0.3s;
+	-o-transition: all ease-in 0.3s;
+	-moz-transition: all ease-in 0.3s;
+	-webkit-transition: all ease-in 0.3s;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #6f8ba4;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.ptb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.mtb-100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
+	color: #3b566e;
+}
+
+.h4, h4 {
+	font-size: 1.125rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+/** Utilities Classes **/
+.title-content h3 {
+	font-size: 28px;
+	margin-bottom: 8px;
+	margin-top: -5px;
+}
+
+.title-content p {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 25px;
+	color: #0f73bb;
+	font-size: 18px;
+}
+
+.title-content p::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 15px;
+	height: 2px;
+	width: 20px;
+	background: #3b566e;
+}
+
+/*** Card Styles ***/
+.card-sec {
+	box-shadow: 0 2px 48px 0 black;
+	text-align: center;
+	padding: 30px 28px;
+	border-radius: 5px 30px 5px 5px;
+	background: #fff;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease-in 0.3s;
+	-webkit-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.card-sec h2 {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+	transition: all ease 0.3s;
+}
+
+.card-sec .card--icon {
+	font-size: 40px;
+	color: #0075ff;
+	transition: all ease 0.3s;
+}
+
+.card-sec:hover {
+	background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.card-sec:hover .card--title, .card-sec:hover .card--icon, .card-sec:hover .card--p {
+	color: #fff;
+	transition: all ease 0.3s;
+}
+
+.bg-info-light {
+	background-color: rgba(2, 182, 179, 0.12) !important;
+	color: #1db9aa !important;
+}
+
+.bg-success-light {
+	background-color: rgba(15, 183, 107, 0.12) !important;
+	color: #26af48 !important;
+}
+
+.bg-danger-light {
+	background-color: rgba(242, 17, 54, 0.12) !important;
+	color: #e63c3c !important;
+}
+
+.bg-primary-light {
+	background-color: rgba(2, 182, 179, 0.12) !important;
+	color: #0d6efd !important;
+}
+/** utilities **/
+
+/** End utilities **/
+
+/** start top header **/
+header {
+    background-color: #183153;
+}
+header ul li {
+    padding:5px 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ddd;
+}
+header ul li span {
+    margin-left: 10px;
+    color: #f3c41b;
+}
+header ul li span i {
+    font-size: 18px;
+}
+/** End Top Header **/
+
+
+/** Start Card In Left Side **/
+.admin-card {
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 6%);
+    padding: 5px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    background: #fff;
+    -moz-transition:all ease 0.3s;
+    -o-transition:all ease 0.3s;
+    -ms-transition:all ease-in 0.3s;
+    -webkit-transition:all ease 0.3s;
+    transition:all ease 0.3s;
+}
+.admin-card--profile {
+    text-align: center;
+    padding: 30px 28px;
+    transition:all ease 0.3s;
+}
+.admin-card--profile_img {
+    border-radius: 50%;
+    height: 107px;
+    width: 119px;
+}
+.admin-card--profile_info {
+    margin-top: 15px;
+}
+.admin-card--profile_info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.admin-card--profile_info h5 {
+    color: #757575;
+    font-size: 13px;
+    font-weight: normal;
+}
+.admin-card--Ulist {
+    color: #757575;
+    font-size: 15px;
+    line-height: 17px;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    text-transform: capitalize;
+}
+.admin-card--Ulist li {
+    border-bottom: 1px solid #f0f0f0;
+}
+.admin-card--Ulist li a {
+    padding: 16px 20px;
+}
+.admin-card--Ulist li:last-child {
+    border-bottom: 0;
+}
+.admin-card--Ulist i {
+    color: #f3c41b;
+}
+
+/** End Left Side Card **/
+
+@media(max-width:700px) {
+    header ul {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*** Start Card With Number ***/
+.docDetails {
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-left: 1px solid #ddd;
+	padding: 35px;
+	flex-wrap: wrap;
+}
+
+.docDetails .progress {
+	position: relative;
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+}
+
+.docDetails .progress svg {
+	width: 7rem;
+	height: 2rem;
+}
+
+.docDetails .progress svg circle {
+	fill: none;
+	stroke-width: 7;
+	stroke-linecap: round;
+	transform: translate(4px, 4px);
+	stroke-dasharray: 110;
+	stroke-dashoffset: 92;
+}
+
+.docDetails .progress svg .first {
+	stroke: #d63384;
+	stroke-dashoffset: -30;
+	stroke-dasharray: 200;
+}
+
+.docDetails .progress svg .second {
+	stroke: #20c997;
+	stroke-dashoffset: -53;
+	stroke-dasharray: 130;
+}
+
+.docDetails .progress svg .third {
+	stroke: #0dcaf0;
+    stroke-dashoffset: 8;
+    stroke-dasharray: 201;
+}
+
+.docDetails .progress .number {
+	position: absolute;
+	left: 1px;
+	top: 3px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.docDetails .progress .number i {
+	font-size: 25px;
+	color: #191970;
+}
+
+.docDetails-right {
+	text-align: center;
+}
+
+.docDetails-right h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.docDetails-right h3 {
+	font-size: 24px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.docDetails-right p {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+/** End Card With Number **/
+
+/** start admin table **/
+.ovrAuto {
+	overflow-x: auto;
+}
+
+table {
+	text-align: center;
+	overflow: scroll;
+}
+
+table tr th, table tr td {
+	padding: 1rem 0.75rem;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-size: 15px;
+}
+
+table tr th:first-child, table tr td:first-child {
+	padding-left: 1.5rem;
+}
+
+table tr th a, table tr td a {
+	margin: 5px;
+}
+
+table tr:last-child td, table tr:last-child th {
+	border-bottom: none;
+}
+/** End Admin Table
+
+
+/** Sigle Data PAge **/
+.ovrAuto p {
+    font-size: 18px;
+    background-color: #FFF;
+}
+.ovrAuto p span {
+    font-weight: bold;
+    font-size: 19;
+    margin-left: 25px;
+}
+.img-data img {
+    width: 200px;
+}
+.title-color {
+    color:#f3c41b;
+}
+
+
+/*** start offcanvas ***/
+.offcanvas-body img {
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+
+/** Responsive **/
+@media (min-width:992px) {
+	.bar-mobile {
+		display: none;
+	}
+}
+@media(max-width:991px) {
+	.left-side {
+		display: none;
+	}
+}

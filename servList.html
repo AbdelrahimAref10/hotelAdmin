@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Elyasmeen</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/font-aswsome/all.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start Top Header -->
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid ">
+            <ul class="navbar-nav pull-left">
+                <li> 
+                    <span><i class="fa fa-phone"></i></span> 
+                     0909876553456
+                </li>
+                <li>
+                    <span><i class="fas fa-location"></i></span> 
+                    الموقع :- <span>السعودية - الرياض - ش الملك فهد</span>
+                </li>
+            </ul>
+            <ul class="navbar-nav pull-right">
+                <li>
+                    <span><i class="fa-solid fa-clock-rotate-left"></i> </span> 
+                    مفتوح 24 ساعة
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end Top Header -->
+    <div class="bodyPage mt-4 mb-4">
+        <div class="container-fluid">
+            <div class="mt-2 mb-3 bar-mobile" data-bs-toggle="offcanvas" href="#cardMobile" role="button" aria-controls="cardMobile"><i class="fa-solid fa-bars"></i></div>
+            <div class="row">
+                <div class="col-lg-3 position-relative">
+                    <!-- Left Side -->
+                    
+                    <div class="admin-card left-side" data-aos="fade-down">
+                        <div class="admin-card--profile">
+                            <img src="images/3-MH_Executive_suite.jpg" class="admin-card--profile_img" alt="" srcset="">
+                            <div class="admin-card--profile_info">
+                                <h3>فندق الياسمين</h3>
+                                <h5>السعودية - الرياض - ش الملك فهد</h5>
+                            </div>
+                        </div>
+                        <ul class="admin-card--Ulist">
+                            <li>
+                                <a href="index.html">
+                                   <span class="mx-2"><i class="fa-solid fa-house-user"></i></span> الصفحة الرئيسية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="allData.html">
+                                    <span class="mx-2"><i class="fa fa-clock"></i></span> الحجوزات
+                                </a>
+                            </li>
+                            <li>
+                                <a href="servList.html">
+                                    <span class="mx-2"><i class="fa-solid fa-circle-plus"></i></span> الاكشن الذى تم على الحجوزات
+                                </a>
+                            </li>
+                            <li>
+                                <a href="rooms.html">
+                                    <span class="mx-2"><i class="fa-solid fa-circle-plus"></i></span> الغرف
+                                </a>
+                            </li>
+                            <li>
+                                <a href="users.html">
+                                    <span class="mx-2"><i class="fa-solid fa-circle-plus"></i></span> المستخدمين
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting.html">
+                                    <span class="mx-2"><i class="fa-solid fa-bars"></i></span> اعدادت الصفحة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">
+                                    <span class="mx-2"><i class="fa-solid fa-arrow-right-from-bracket"></i></span> تسجيل الخروج
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- End Left Side -->
+                </div>
+
+                <div class="col-lg-9" data-aos="fade-down">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">حجوزات العملاء المؤكدة</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">حجوزات العملاء المرفوضة</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending" type="button" role="tab" aria-controls="pending" aria-selected="false">حجوزات العملاء المعلقة</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent" data-aos="fade-down">
+                        <!-- الحجوزات المؤكدة -->
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <!-- Admin Table -->
+                            <div class="admin-card mt-4 ovrAuto">
+                                <table class="table table-hover table-center">
+                                    <tbody>
+                            
+                                        <tr>
+                                            <th>#</th>
+                                            <th>اسم العميل</th>
+                                            <th>موعد الحجز</th>
+                                            <th>بداية الحجز </th>
+                                            <th>نهاية الحجز</th>
+                                            <th>إجمالى الأيام</th>
+                                            <th>إجمالى المبلغ</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>                                    
+                                            <th>1</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-success-light">
+                                                    <span><i class="fa fa-check"></i></span>
+                                                    تم تأكيد الحجز من قبل المستخدم محمود محمد
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                        <tr>                                    
+                                            <th>2</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-success-light">
+                                                    <span><i class="fa fa-check"></i></span>
+                                                    تم تأكيد الحجز من قبل المستخدم محمود محمد
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                        <tr>                                    
+                                            <th>3</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-success-light">
+                                                    <span><i class="fa fa-check"></i></span>
+                                                    تم تأكيد الحجز من قبل المستخدم محمود محمد
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Admin Table -->
+                        </div>
+                        <!-- الحجوزات المرفوضة -->
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" data-aos="fade-down">
+                            <!-- Admin Table -->
+                            <div class="admin-card mt-4 ovrAuto">
+                                <table class="table table-hover table-center">
+                                    <tbody>
+                            
+                                        <tr>
+                                            <th>#</th>
+                                            <th>اسم العميل</th>
+                                            <th>موعد الحجز</th>
+                                            <th>بداية الحجز </th>
+                                            <th>نهاية الحجز</th>
+                                            <th>إجمالى الأيام</th>
+                                            <th>إجمالى المبلغ</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>                                    
+                                            <th>1</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-danger-light">
+                                                    <span><i class="fa-solid fa-rectangle-xmark"></i></span>
+                                                    تم رفض الحجز من قبل المستخدم محمود محمد
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                        <tr>                                    
+                                            <th>4</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-danger-light">
+                                                    <span><i class="fa-solid fa-rectangle-xmark"></i></span>
+                                                    تم رفض الحجز من قبل المستخدم محمود محمد
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>                                    
+                                            <th>4</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-danger-light">
+                                                    <span><i class="fa-solid fa-rectangle-xmark"></i></span>
+                                                    تم رفض الحجز من قبل المستخدم محمود محمد
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Admin Table -->
+                        </div>
+
+                        <!-- الحجوزات المعلقة -->
+                        <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab" data-aos="fade-down">
+                            <!-- Admin Table -->
+                            <div class="admin-card mt-4 ovrAuto">
+                                <table class="table table-hover table-center">
+                                    <tbody>
+                            
+                                        <tr>
+                                            <th>#</th>
+                                            <th>اسم العميل</th>
+                                            <th>موعد الحجز</th>
+                                            <th>بداية الحجز </th>
+                                            <th>نهاية الحجز</th>
+                                            <th>إجمالى الأيام</th>
+                                            <th>إجمالى المبلغ</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>                                    
+                                            <th>1</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-info-light">
+                                                    لم يتم الرد عليها
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                        <tr>                                    
+                                            <th>4</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-info-light">
+                                                    لم يتم الرد عليها
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>                                    
+                                            <th>4</th>
+                                            <td>عبدالرحيم </td>
+                                            <td>13/1/2022</td>
+                                            <td>12/2/2022</td>
+                                            <td>15/2/2022</td>
+                                            <td>3 ايام</td>
+                                            <td>350 ريال</td>
+                                            <td>
+                                                <p class="btn bg-info-light">
+                                                    لم يتم الرد عليها
+                                                </p>
+                                            </td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Admin Table -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- OffCanvas For Mobile (Admin Card) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="cardMobile" aria-labelledby="cardMobileLable">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="admin-card">
+                <div class="admin-card--profile">
+                    <img src="images/3-MH_Executive_suite.jpg" class="admin-card--profile_img" alt="" srcset="">
+                    <div class="admin-card--profile_info">
+                        <h3>فندق الياسمين</h3>
+                        <h5>السعودية - الرياض - ش الملك فهد</h5>
+                        <p>إسم المستخدم :-  <span>محمد احمد محمود</span></p>
+                    </div>
+                </div>
+                <ul class="admin-card--Ulist">
+                    <li>
+                        <a href="index.html">
+                            <span class="mx-2"><i class="fa-solid fa-house-user"></i></span> الصفحة الرئيسية
+                        </a>
+                    </li>
+                    <li>
+                        <a href="allData.html">
+                            <span class="mx-2"><i class="fa fa-clock"></i></span> الحجوزات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servList.html">
+                            <span class="mx-2"><i class="fa-solid fa-circle-plus"></i></span> الاكشن الذى تم على الحجوزات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rooms.html">
+                            <span class="mx-2"><i class="fa-solid fa-circle-plus"></i></span> الغرف
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <span class="mx-2"><i class="fa-solid fa-circle-plus"></i></span> المستخدمين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html">
+                            <span class="mx-2"><i class="fa-solid fa-bars"></i></span> اعدادت الصفحة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">
+                            <span class="mx-2"><i class="fa-solid fa-arrow-right-from-bracket"></i></span> تسجيل الخروج
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scrip.js"></script>
+</body>
+</html>
