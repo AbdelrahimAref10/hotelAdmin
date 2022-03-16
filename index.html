@@ -49,6 +49,10 @@
                                 <h3>فندق الياسمين</h3>
                                 <h5>السعودية - الرياض - ش الملك فهد</h5>
                                 <p>إسم المستخدم :-  <span>محمد احمد محمود</span></p>
+                                <button class="btn btn-sm bg-info-light mt-2" data-bs-toggle="offcanvas" href="#AddRoom" role="button" aria-controls="AddRoom">
+                                    <span><i class="fa fa-add"></i></span>
+                                     حجز غرفة الآن
+                                </button>
                             </div>
                         </div>
                         <ul class="admin-card--Ulist">
@@ -272,6 +276,46 @@
             </div>
         </div>
     </div>
+
+
+    <!-- OffCanvas For Add Room Servation -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="AddRoom" aria-labelledby="AddRoom">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="text-center">
+                <img src="images/profile.png" alt="">
+                <h4>Elyasmmen Hotel</h4>
+            </div>
+            <form action="" class="form-group mt-3">
+                <label for="name" class="mb-2">الاسم بالكامل</label>
+                <input type="text" placeholder="الاسم بالكامل" class="form-control mb-2" id="name" name="name">
+                <label for="phone" class="mb-2">رقم التليفون</label>
+                <input type="number" placeholder="رقم التليفون" class="form-control mb-2" id="phone" name="phone">
+                <label for="national" class="mb-2">الرقم القومي</label>
+                <input type="number" placeholder="الرقم القومي" class="form-control mb-2" id="national" name="national">
+                <label for="ind" class="mb-2"> عدد الغرف الفردية</label>
+                <input type="number" placeholder="عدد الغرف الفردية" class="form-control mb-2" id="ind">
+                <label for="double" class="mb-2"> عدد الغرف الزوجية</label>
+                <input type="number" placeholder="عدد الغرف الزوجية" class="form-control mb-2" id="double">
+                <label for="start" class="mb-2"> بداية الحجز</label>
+                <input type="date" placeholder="بداية الحجز" class="form-control mb-2" id="start">
+                <label for="end" class="mb-2"> نهاية الحجز</label>
+                <input type="date" placeholder="نهاية الحجز" class="form-control mb-2" id="end">
+                <label for="roomNum" class="mb-2"> رقم الغرفة</label>
+                <select class="js-example-basic-multiple w-100" id="roomNum" multiple>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">6</option>
+                </select>
+                <button type="button" class="btn bg-info-light pe-2 px-2 mt-3">حجز الغرفة</button>
+            </form>
+        </div>
+    </div>
+
 
 
     <!-- OffCanvas -->
